@@ -86,13 +86,20 @@ body {
   border-radius: 3px;
 }
 
+.TodoItem-container:hover .TodoItem-delete {
+  visibility: visible;
+}
+
+.TodoItem-container:hover {
+  background-color: #F1EDF7;
+}
+
 .TodoItem {
   font-size: 14px;
   margin-left: 8px;
   margin-bottom: 6px;
   color: #453C52;
 }
-
 
 .TodoItem-checkbox {
   width: 16px;
@@ -114,8 +121,6 @@ body {
 .TodoItem-delete > img{
   width: 16px;
 }
-
-
 
 .TodoItem-date {
   font-size: 12px;
