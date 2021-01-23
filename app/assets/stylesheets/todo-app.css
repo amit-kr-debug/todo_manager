@@ -41,7 +41,7 @@ body {
 .AddTodo-button {
   font-size: 14px;
   color: white;
-  background-color: #48BB78;
+  background-color: #4dbd7c;
   border: 1px solid transparent;
   padding: 6px 22px;
   border-radius: 4px;
@@ -51,7 +51,7 @@ body {
   padding: 6px 22px;
   font-size: 14px;
   color: white;
-  background-color: #187c42;
+  background-color: #117e3e;
   cursor: pointer;
   border: 1px solid transparent;
   border-radius: 4px;
