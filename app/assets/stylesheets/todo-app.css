@@ -128,3 +128,7 @@ body {
   margin-left: 15px;
   letter-spacing: 0.09px;
 }
+
+.todo-text-completed{
+  text-decoration: line-through;
+}
