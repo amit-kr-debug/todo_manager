@@ -16,18 +16,25 @@
                    onclick = "this.form.submit()"
                    />
           <%end%>
+
             <p class=<%= todo.completed ? "todo-text-completed": "" %>>
               <%= todo.todo_text %>
             <p>
+
             <%if section_title=="Overdue"%>
               <p class="TodoItem-overdueLabel">Overdue</p>
             <% end %>
+
             <% if show_due_date %>
               <p class="TodoItem-date"><%= todo.due_date.to_s(:short) %></p>
             <% end %>
+
             <a class="TodoItem-delete" href="javascript:void(0)">
-              <img src="delete.png">
+            <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
+              <input type="image" src="delete.png"  onclick = "this.form.submit()">
+            <% end %>
             </a>
+
           </label>
         </li>
       <% end %>
