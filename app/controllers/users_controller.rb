@@ -1,18 +1,22 @@
 class UsersController < ApplicationController
+  def new
+    render "users/new"
+  end
+
   def index
     render plain: User.all.map { |user| user.to_pleasant_string }.join("\n")
   end
 
   def create
-    user_name = params[:name]
-    user_email = params[:email]
-    password = params[:password]
+    first_name = params[:first_name]
+    last_name = params[:last_name]
+    email = params[:email]
     new_user = User.create!(
-      name: user_name,
-      email: user_email,
-      password: password,
+      first_name: first_name,
+      last_name: last_name,
+      email: email,
     )
-    response_text = "Hey #{user_name}, you have been successfully added"
+    response_text = "Hey #{first_name}, you have been successfully added"
     render plain: response_text
   end
 
