@@ -10,9 +10,20 @@
 
 .User-Header{
   padding:10px;
-  background-color: lavender;
+  background-color: rgb(167, 167, 241,0.5);
   font-size: 20px;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  border-radius: 4px;
+
+}
+
+.Flash-error{
+  padding: 10px;
+  margin-bottom: 10px;
+  color:#a94442;
+  background-color:#f2dede;
+  border-color:#ebccd1;
+  border-radius: 4px;
 }

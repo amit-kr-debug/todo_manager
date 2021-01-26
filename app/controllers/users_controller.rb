@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  skip_before_action :ensure_user_logged_in
+
   def new
     render "users/new"
   end
@@ -12,14 +14,14 @@ class UsersController < ApplicationController
     last_name = params[:last_name]
     email = params[:email]
     password = params[:password]
-    new_user = User.create!(
+    user = User.create!(
       first_name: first_name,
       last_name: last_name,
       email: email,
       password: password,
     )
-    response_text = "Hey #{first_name}, you have been successfully added"
-    render plain: response_text
+    session[:current_user_id] = user.id
+    redirect_to todos_path
   end
 
   def login
