@@ -11,10 +11,12 @@ class UsersController < ApplicationController
     first_name = params[:first_name]
     last_name = params[:last_name]
     email = params[:email]
+    password = params[:password]
     new_user = User.create!(
       first_name: first_name,
       last_name: last_name,
       email: email,
+      password: password,
     )
     response_text = "Hey #{first_name}, you have been successfully added"
     render plain: response_text

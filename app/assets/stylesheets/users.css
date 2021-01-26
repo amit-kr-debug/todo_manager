@@ -19,7 +19,9 @@ padding: 8px;
 
 .Form-submit{
   font-size: 20px;
-  padding: 10px;
-  background-color: #30cf6dea;
-  border: 0;
+  color: white;
+  background-color: #269956;
+  border: 1px solid transparent;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
