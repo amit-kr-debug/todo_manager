@@ -1,24 +1,23 @@
-# README
+# Todo Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### URL to the website
+[Todo Manager app Link](http://amit-todo-manager-saas-201.herokuapp.com/)
 
-Things you may want to cover:
+#### Credentials
+* email :=> user@todo.com
+* password :=> 123
 
-* Ruby version
+### This is a todo manager built on `Rails`
+It has
+* Login/Sigup functionality
+* Can add todo
+* Remove a todo
+* Mark todo as Done
 
-* System dependencies
 
-* Configuration
+### This app categorises your Todo in three categories
+* Overdue
+* Due Today
+* Due Later
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Todo-Manager](app/assets/images/home-todo.JPG)
